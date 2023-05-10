@@ -2,7 +2,7 @@ import os, random
 from moviepy.editor import VideoFileClip, concatenate_videoclips, AudioFileClip, afx, CompositeAudioClip
 
 clip_duration = 64
-clipsToUse = 20
+number_of_clips = 20
 video_clips_list = []
 
 # directories
@@ -11,8 +11,8 @@ audio_directory = 'assets/music'
 mograph_directory = 'assets/mograph'
 
 # motion graphics
-bumperin = VideoFileClip(f'{mograph_directory}/bumper-in.mp4', fps_source="fps")
-bumperout = VideoFileClip(f'{mograph_directory}/bumper-out.mp4', fps_source="fps")
+bumper_in = VideoFileClip(f'{mograph_directory}/bumper-in.mp4', fps_source="fps")
+bumper_out = VideoFileClip(f'{mograph_directory}/bumper-out.mp4', fps_source="fps")
 
 # get random file from music folder, set duration & audio FX
 random_audio_file = random.choice(os.listdir(audio_directory))
@@ -24,21 +24,21 @@ list_of_files = os.listdir(footage_directory)
 def get_random_files(num, list_): 
   file_names = []
   while True: 
-    ap = random.choice(list_) 
-    if ap not in file_names: 
-        file_names.append(ap) 
+    random_choice_from_list = random.choice(list_) 
+    if random_choice_from_list not in file_names: 
+        file_names.append(random_choice_from_list) 
         if len(file_names) == num: 
             return file_names
         
-random_files = get_random_files(clipsToUse, list_of_files)
+random_files = get_random_files(number_of_clips, list_of_files)
 
 # get full footage directory name
 for i in random_files:
     video_clips_list.append(f'{footage_directory}/{i}')
 
-print('Starting script...', random_audio_file)
+print('Starting script...')
 print('Audio file selected: ', random_audio_file)
-print(f'{clipsToUse} video files selected from directory {footage_directory}')
+print(f'{number_of_clips} video files selected from directory {footage_directory}')
 
 # clip variables
 clip1 = VideoFileClip(video_clips_list[0], fps_source="fps").subclip(2, 5)
@@ -63,6 +63,6 @@ clip19 = VideoFileClip(video_clips_list[18], fps_source="fps").subclip(2, 5)
 clip20 = VideoFileClip(video_clips_list[19], fps_source="fps").subclip(2, 5)
 
 # combine video & audio files and export
-combined = concatenate_videoclips([bumperin, clip1, clip2, clip3, clip4, clip5, clip6, clip7, clip8, clip9, clip10, clip11, clip12, clip13, clip14, clip15, clip16, clip17, clip18, clip19, clip20, bumperout])
+combined = concatenate_videoclips([bumper_in, clip1, clip2, clip3, clip4, clip5, clip6, clip7, clip8, clip9, clip10, clip11, clip12, clip13, clip14, clip15, clip16, clip17, clip18, clip19, clip20, bumper_out])
 combined.audio = CompositeAudioClip([audio])
 combined.write_videofile('assets/rendered/rendered.mp4', fps=25)
