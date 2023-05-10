@@ -8,11 +8,18 @@ This script is good for any editing job where you know exactly what to do and do
 
 Every branch of this script is a different TV show when I've used it, with the neccesary code adaptations to the workflow.
 
-### TV shows where I've used this script:
+<hr>
 
-```
-    - De pago en pago (Canal 10 / Uruguay)
-    - Sports events & traditional events (Canal 10 & A+V / Uruguay)
-    - Campo eventos stream videos (Campo TV / Uruguay)
-    - Al volante (A+V / Uruguay)
-```
+## TV shows where I've used this script:
+
+### De pago en pago (Canal 10 / Uruguay)
+    Customizations: 
+    - Video duration 40 seconds
+    - Loop over many folders of footage. 
+    - Render the final clip with the name of the footage folder. 
+    - Standard clip duration 2 sec, except the first and last clip to 3 sec. 
+    - Apply fade out FX of 2 sec on audio
+
+### Sports events & traditional events (Canal 10 & A+V / Uruguay)
+### Campo eventos stream videos (Campo TV / Uruguay)
+### Al volante (A+V / Uruguay)
