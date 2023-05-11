@@ -12,7 +12,7 @@ Every branch of this script is a different TV show when I've used it, with the n
 
 ## TV shows where I've used this script:
 
-### De pago en pago (Canal 10 / Uruguay)
+### De pago en pago / Canal 10 / Uruguay / Traditional events
     Customizations: 
     - Video duration 40 seconds
     - Loop over many folders of footage. 
@@ -20,7 +20,20 @@ Every branch of this script is a different TV show when I've used it, with the n
     - Standard clip duration 2 sec, except the first and last clip to 3 sec. 
     - Apply fade out FX of 2 sec on audio
 
-### Sports events & traditional events (Canal 10 & A+V / Uruguay)
-### Campo eventos stream videos (Campo TV / Uruguay)
-### Al volante (A+V / Uruguay)
+### Abriendo porteras / Canal 10 & A+V / Uruguay / Traditional & sport events
+    Customizations: 
+    - Video duration 38 seconds
+    - Loop over many folders of footage. 
+    - Render the final clip with the name of the footage folder. 
+    - Standard clip duration 2 sec, except the last 6 sec. 
+    - Apply fade out FX of 3 sec on audio
+    - Apply Slow motion and Color FX on last clip
 
+### Auctions broadcast / Campo TV / Uruguay / Streaming
+    Customizations: 
+    - Video duration 45 seconds
+    - 4 clips: general shot (7 sec), walking right shot (15 secs), walking left shot (15 secs), general shot (8 sec)
+    - No motion graphics
+    - Loop over many folders of footage. 
+    - Render the final clip with the name of the footage folder. 
+    - Apply fade out FX of 5 sec on audio
