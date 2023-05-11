@@ -30,3 +30,10 @@ Every branch of this script is a different TV show when I've used it, with the n
     - Apply Slow motion and Color FX on last clip
 
 ### Auctions broadcast / Campo TV / Uruguay / Streaming
+    Customizations: 
+    - Video duration 45 seconds
+    - 4 clips: general shot (7 sec), walking right shot (15 secs), walking left shot (15 secs), general shot (8 sec)
+    - No motion graphics
+    - Loop over many folders of footage. 
+    - Render the final clip with the name of the footage folder. 
+    - Apply fade out FX of 5 sec on audio
